@@ -188,34 +188,6 @@ views:
                 }
           - type: conditional
             conditions:
-              - condition: state
-                entity: binary_sensor.pronown_in_bed
-                state: 'on'
-            card:
-              type: custom:minimalistic-area-card
-              title: Bedroom
-              area: bedroom
-              hide_unavailable: false
-              tap_action:
-                action: navigate
-                navigation_path: /config/areas/area/bedroom
-              entities:
-                - light.bedroom_fan_lights
-                - light.pronown_lamp
-                - light.batakup_lamp
-                - sensor.bedroom_average_temperature
-                - binary_sensor.withings_in_bed_pronown
-                - binary_sensor.withings_in_bed_batakup
-                - fan.bedroom_ceiling_fan
-                - media_player.firetv_bedroom
-                - cover.bedroom_shade
-              card_mod: null
-              style: |
-                ha-card {
-                height:480px !important;
-                }
-          - type: conditional
-            conditions:
               - condition: or
                 conditions:
                   - condition: state

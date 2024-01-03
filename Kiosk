@@ -285,14 +285,12 @@ views:
           - initial_view: listWeek
             type: calendar
             entities:
-              - calendar.pronownjenkins_gmail_com
               - calendar.birthdays
               - calendar.work_pronown
               - calendar.work_batakup
               - calendar.work_batakup_2
               - calendar.holidays_in_united_states
               - calendar.family
-              - calendar.elizabethayers543_gmail_com
   - title: Security
     path: security
     icon: mdi:shield-home-outline
